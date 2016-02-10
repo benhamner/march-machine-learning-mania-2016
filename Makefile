@@ -58,7 +58,7 @@ hashes: output/hashes.txt
 
 release: output/hashes.txt
 	cp -r output march-machine-learning-mania-2016-v1
-	zip -r -X output/march-machine-learning-mania-2016-v1-release-`date -u +'%Y-%m-%d-%H-%M-%S'` world-development-indicators/*
+	zip -r -X output/march-machine-learning-mania-2016-v1-release-`date -u +'%Y-%m-%d-%H-%M-%S'` march-machine-learning-mania-2016-v1/*
 	rm -rf march-machine-learning-mania-2016-v1
 
 all: csv db hashes release
